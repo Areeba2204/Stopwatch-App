@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    
+    <style>
+
+        body{
+            background-color:black ;
+            text-align: center;
+            color:whitesmoke ;
+        }
+        h1{
+            display: inline-block;
+            width: 200px;
+            font-size: 30pt;
+        }
+        h2{
+            width: 20px;
+            color: whitesmoke;
+            padding: 5%;
+            margin-right: 10px;
+            font-weight: 900;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        button{
+            margin-top: 40px;
+            margin-right: 10px;
+            padding: 0.5%;
+            border-radius: 8px;
+            background-color: gainsboro;
+            font-weight: 800;
+            border:ridge white;
+            border-width: 2px;
+            background-color: whitesmoke;
+        }
+        
+        button:hover{
+            border:ridge orange;
+            border-width: 4px;
+            background-color: rgb(255, 215, 141)
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div style="display:flex; flex-direction: column; align-items: center;">
+        <h1>Stop Watch</h1>
+
+        <div style=" border-radius: 250px; border-style: double solid; border-color: orange; border-width:8px; box-sizing: border-box; width: 250px; height: 250px; display: flex; align-items: center; justify-content: center;">
+            <h2 id="hour" style="font-size:20pt; ">0</h2> <span style="font-size: x-large;">:</span>
+            <h2 id="min" style="font-size:20pt; ">0</h2> <span style="font-size: x-large;">:</span>
+            <h2 id="sec" style="font-size:20pt; ">0</h2> <span style="font-size: x-large;">:</span>
+            <h2 id="msec" style="font-size:20pt; ">0</h2> 
+        </div>
+    
+    
+        <div style="display: flex; width: 300px; justify-content: space-evenly;">
+            <button onclick="start()" ><img src="./play-button.png" alt="" width="30px"></button>
+            <button onclick="pause()" ><img src="./video-pause-button.png" alt="" width="30px"></button>
+            <button onclick="reset()" ><img src="./restart.png" alt="" width="30px"></button>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="app.js"></script>
+</html>
